@@ -1,16 +1,19 @@
 import React from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 
 const Footer = () => {
   return (
   
 <footer className="bg-white lg:grid lg:grid-cols-5">
   <div className="relative block h-32 lg:col-span-2 lg:h-full">
-    <img
-      src="https://images.unsplash.com/photo-1588776814546-ec6f83c83700?ixlib=rb-4.0.3&auto=format&fit=crop&w=1567&q=80"
-      alt="Clinic Exterior"
-      className="absolute inset-0 h-full w-full object-cover"
-    />
+    <Image
+  src="/clinic.jpg"
+  alt="Clinic Exterior"
+  className="absolute inset-0 h-full w-full object-cover"
+  width={40}
+  height={50}
+/>
   </div>
 
   <div className="px-4 py-16 sm:px-6 lg:col-span-3 lg:px-8">
